@@ -6,10 +6,11 @@ from twilio.rest import TwilioRestClient
 account_sid = "AC3b871b8dc7bb3785cddda6fd9ad271fe"  #WARNING: replace with your own account_sid
 auth_token = "6b65df96c48e7d3b99ac574d872af60a"  #WARNING: replace with your own auth_token
 tonumber = "+17816402658"  #WARNING: replace with your own cell phone numer
-fromnumber = "+17815705388"  # WARNING: replace with your TWILIO account number
+fromnumber = "+17815705388"  # WARNING: replace with your own TWILIO account number
 body_text = "Sample text"  # replace with sample text for your message
 
 print "Preparing to send text from %s to %s" % (fromnumber, tonumber)
+
 client = TwilioRestClient(account_sid, auth_token)
 
 message = client.messages.create(to="+17816402658", 
