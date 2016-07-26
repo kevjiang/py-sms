@@ -8,8 +8,8 @@ from random import choice
 # Find these values at https://twilio.com/user/account
 account_sid = "AC3b871b8dc7bb3785cddda6fd9ad271fe"
 auth_token = "6b65df96c48e7d3b99ac574d872af60a"  
-fromnumber = "+17815705388"
-tonumber = "+17816402658"
+fromnumber = "+17815705388"  # twilio
+tonumber = "+17816402658"  # your phone
 body_text = "Hi!  I'm a sample text message!"
 ######################################################
 
@@ -35,7 +35,7 @@ def send_media(fromnumber, tonumber, media_links):
 
 	print "Media text successfully sent!"
 
-send(fromnumber, tonumber, body_text)
+# send(fromnumber, tonumber, body_text)
 
 # media_links = ["http://i.telegraph.co.uk/multimedia/archive/03597/POTD_chick_3597497k.jpg", 'https://upload.wikimedia.org/wikipedia/commons/5/55/Phillips_Academy_Andover_Coat_of_Arms.png', 'http://vignette1.wikia.nocookie.net/pokemon/images/f/fc/025Pikachu_OS_anime_5.png/revision/20150101093704', "http://all4desktop.com/data_images/original/4238212-pictures.jpg", "http://i.telegraph.co.uk/multimedia/archive/03519/potd-squirrel_3519920k.jpg", "http://i.telegraph.co.uk/multimedia/archive/03571/potd-squirrel_3571152k.jpg"]
 # send_media(fromnumber, tonumber, choice(media_links))
