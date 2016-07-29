@@ -40,8 +40,8 @@ def send_media(fromnumber, tonumber, media_links):
 # media_links = ["http://i.telegraph.co.uk/multimedia/archive/03597/POTD_chick_3597497k.jpg", 'https://upload.wikimedia.org/wikipedia/commons/5/55/Phillips_Academy_Andover_Coat_of_Arms.png', 'http://vignette1.wikia.nocookie.net/pokemon/images/f/fc/025Pikachu_OS_anime_5.png/revision/20150101093704', "http://all4desktop.com/data_images/original/4238212-pictures.jpg", "http://i.telegraph.co.uk/multimedia/archive/03519/potd-squirrel_3519920k.jpg", "http://i.telegraph.co.uk/multimedia/archive/03571/potd-squirrel_3571152k.jpg"]
 # send_media(fromnumber, tonumber, choice(media_links))
 
-# user = raw_input("Enter a text to send your TWILIO number.  Or enter q to quit: \n> ")
-# while user != "q":
-# 	response = response_handler(user)
-# 	send(fromnumber, tonumber, response)
-# 	user = raw_input("Enter a text to send your TWILIO number.  Or enter q to quit: \n> ")
+user = raw_input("Enter a text to send your TWILIO number.  Or enter q to quit: \n> ")
+while user != "q":
+	response = response_handler(user)
+	send(fromnumber, tonumber, response)
+	user = raw_input("Enter a text to send your TWILIO number.  Or enter q to quit: \n> ")
